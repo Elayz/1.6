@@ -1,5 +1,6 @@
 body{
     margin: 40px;
+    font-family: 'TT Lakes', sans-serif;
 }
 
 .header{
@@ -35,15 +36,14 @@ hr{
 }
 
 .header_nav_element_button{
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .main_page_menu_el{
     /*transition: 0.1s;*/
-    font-family: 'TT Lakes', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     margin: 10px 0px 5px 10px;
     padding: 0px 0px 10px 0px;
     color: gray;
@@ -58,8 +58,7 @@ hr{
 }
 
 .main_page_h1{
-    font-family: 'TT Lakes', sans-serif;
-    font-size: 50px;
+    font-size: 28px;
 }
 
 .main_page_menu{
@@ -69,18 +68,20 @@ hr{
 
 .main_page_info{
     display: flex;
+    justify-content: space-between;
 }
 
 .main_page_info_text{
     font-family: 'TT Lakes', sans-serif;
-    font-size: 30px;
+    font-size: 14px;
 
 }
 
 .main_page_info_img img{
-    flex: 0 1;
-    border-radius: 10px;
-    width: 80%;
-    height: 80%;
-    margin: auto;
+    flex: 1 1;
+    border-radius: 20px;
+    width: 800px;
+    height: 400px;
+    align-self:flex-start;
+
 }
