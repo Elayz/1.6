@@ -138,8 +138,8 @@ hr{
     }
     .main_page_info_img{
         flex: 1 1;
-        width: 10em;
-        height: 10em;
+        width: 15em;
+        height: 15em;
         align-self:flex-start;
         border-radius: 0.5em;
         margin-right: -50px;
@@ -154,8 +154,8 @@ hr{
     }
     .main_page_info_img img{
         flex: 1 1;
-        width: 180%;
-        height: 70%;
+        width: 130%;
+        height: 90%;
         align-self:flex-start;
         border-radius: 0.5em;
         margin-right: -50px;
