@@ -158,8 +158,9 @@ hr{
     .main_page_el{
         display: flex;
         padding-left: 40px;
-        margin-left: 0px;
+        margin-left: -8px;
     }
+
     .main_page_text{
         display: flex;
         align-items: center;
@@ -180,6 +181,12 @@ hr{
         justify-content: flex-start;
         flex-wrap: wrap;
         margin-left: 45px;
+    }
+
+    .main_page_el{
+        display: flex;
+        padding-left: 40px;
+        margin-left: -8px;
     }
 
     .main_page_text{
