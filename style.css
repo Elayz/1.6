@@ -128,7 +128,7 @@ hr{
     margin-right: 70px;
 }
 
-@media screen and (max-width: 3000px) and (min-width: 769px){
+@media screen and (max-width: 9000px) and (min-width: 769px){
     header{
         display: none;
     }
@@ -161,10 +161,13 @@ hr{
         margin-left: -8px;
     }
 
+
+
     .main_page_text{
         display: flex;
         align-items: center;
-        margin-left: 350px;
+        margin-left: auto;
+        justify-content: flex-end;
     }
 
     .main_page_text a{
