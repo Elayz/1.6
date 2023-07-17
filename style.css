@@ -143,9 +143,11 @@ hr{
         margin-left: 45px;
     }
 
-    /*.main_page_menu{*/
-    /*    margin-right: 100px;*/
-    /*}*/
+    .main_page_menu{
+        overflow-x: clip;
+    }
+
+    
 
     .main_page_info_text{
         display: none;
