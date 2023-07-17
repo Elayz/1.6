@@ -1,5 +1,7 @@
 body{
     font-family: 'TT Lakes', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -58,12 +60,9 @@ hr{
     border: 3px #F8F8F8 solid;
     border-radius: 0;
     padding: 0.5em;
-}
-
-.main_page_menu_el{
     min-width: 185px;
-
 }
+
 
 .main_page_menu_el:hover{
     /*transform: scale(1.1);*/
@@ -93,7 +92,7 @@ hr{
     display: flex;
     justify-content: space-around;
     /*margin: 0 5% 30px 5%;*/
-    overflow: scroll;
+
 }
 
 .main_page_text_butt{
@@ -207,8 +206,6 @@ hr{
     .main_page_menu_el{
         display: flex;
         justify-content: space-around;
-        overflow: scroll;
-
     }
     .main_page_menu_el:first-child{
         margin-left: 285px;
@@ -252,8 +249,6 @@ hr{
     .main_page_menu_el{
         display: flex;
         justify-content: space-around;
-        overflow: scroll;
-
     }
 
     .main_page_el{
