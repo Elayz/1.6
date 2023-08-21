@@ -4,22 +4,77 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Макет_1.5</title>
-    <link rel="stylesheet" href="style.css ">
+    <link rel="stylesheet" href="oldCSS.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
+
+
+
+
 <body class="body">
+
+<div class="BlureMask"></div>
 <section class="side_panel_left">
-    <main class="main">
-        <div class="main_panel">
+        <main class="main">
+            <div class="main_panel">
+                <header class="main_panel_header">
+                    <a class="main_panel_header_right">
+                        <img src="panel_imgs/burger.svg" alt="картинка" class="header_nav_element_button">
+                    </a>
+                    <a class="main_panel_header_right">
+                        <img src="imgsSVG/Group.svg" alt="картинка" class="header_nav_element_button">
+                    </a>
+                    <a class="main_panel_header_left">
+                        <img src="imgsSVG/checkstatus.svg" alt="картинка" class="header_nav_element_button">
+                    </a>
+                </header>
+                <div class="main_content">
+                    <a href="" class="main_content_el">Ремонт техники</a>
+                    <a href="" class="main_content_el">Услуги и сервисы</a>
+                    <a href="" class="main_content_el">Корпоративным клиентам</a>
+                    <a href="" class="main_content_el">Продавцам техники</a>
+                    <a href="" class="main_content_el">Партнёры</a>
+                    <a href="" class="main_content_el">Производителям</a>
+                    <a href="" class="main_content_el">Наши сервисные центры</a>
+                    <a href="" class="main_content_el">Контакты</a>
+                </div>
+                <footer class="main_panel_footer">
+                    <div class="main_panel_footer_block">
+                        <a class="main_panel_footer_block_right">
+                            <img src="imgsSVG/call.svg" alt="картинка" class="">
+                        </a>
+                        <a class="main_panel_footer_block_right">
+                            <img src="imgsSVG/chat.svg" alt="картинка" class="">
+                        </a>
+                        <a class="main_panel_footer_block_right">
+                            <img src="imgsSVG/profile.svg" alt="картинка" class="">
+                        </a>
+                    </div>
+                    <div class="main_panel_footer_block_info">
+                        <a class="main_panel_footer_text">mail@cps.com</a>
+                        <h2 class="main_panel_footer_text">8 800 890 8900</h2>
+                    </div>
+                    <div class="main_panel_footer_block_lang">
+                        <h4 class="main_panel_footer_block_lang_el">RU</h4>
+                        <h4 class="main_panel_footer_block_lang_el">EN</h4>
+                        <h4 class="main_panel_footer_block_lang_el">CH</h4>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </section>
+<section class="side_panel_left_mobile">
+    <div class="main_panel">
             <header class="main_panel_header">
-                <a class="main_panel_header_right">
+                <a class="main_panel_header_right_close">
                     <img src="panel_imgs/burger.svg" alt="картинка" class="header_nav_element_button">
                 </a>
                 <a class="main_panel_header_right">
                     <img src="imgsSVG/Group.svg" alt="картинка" class="header_nav_element_button">
                 </a>
                 <a class="main_panel_header_left">
-                    <img src="imgsSVG/checkstatus.svg" alt="картинка" class="header_nav_element_button">
+                    <img src="imgsSVG/search.svg" alt="картинка" class="header_nav_element_button">
                 </a>
             </header>
             <div class="main_content">
@@ -55,13 +110,12 @@
                 </div>
             </footer>
         </div>
-    </main>
 </section>
 <section class="prime_page">
-<header class="header">
+    <header class="header">
         <section class="header_nav">
             <div class="header_nav_elements_left">
-                <a class="header_nav_element_left">
+                <a class="header_nav_element_left_burger">
                     <img src="imgsSVG/burger.svg" alt="картинка" class="header_nav_element_button">
                 </a>
                 <hr class="header_nav_hr">
@@ -93,7 +147,6 @@
             </div>
         </section>
     </header>
-
     <main class="main_page">
         <div class="main_page_el">
             <h1 class="main_page_h1">
@@ -170,8 +223,7 @@
                     </h5>
                 </section>
                 <section class="slider">
-                    <div class="image-slider swiper-container">
-
+                    <div class="image-slider swiper">
                         <div class="image-slider_wrapper swiper-wrapper">
                             <div class="image-slider_slide swiper-slide">
                                 <ul class="image-slider_image">
@@ -356,7 +408,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="main_button">
+                    <div class="main_button1">
                         <img src="imgsCom/expand.svg" alt="main button img" class="main_button_img">
                         <span class="main_button_text_closed"></span>
                     </div>
@@ -369,80 +421,59 @@
                     </h5>
                 </section>
                 <section class="slider">
-                    <div class="image-slider swiper-container">
+                    <div class="swiper image-slider">
+                        <!-- Additional required wrapper -->
                         <div class="image-slider_wrapper swiper-wrapper">
-                            <div class="image-slider_slide swiper-slide">
-                                <ul class="image-slider_image">
-                                    <li class="main_blockTec">
-                                        <span>Ремонт ноутбуков</span>
-                                        <a href="" class="main_block_button">
-                                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                                        </a>
-                                    </li>
-                                </ul>
+                            <!-- Slides -->
+                            <div class="image-slider_image swiper-slide">
+                                <button class="main_blockTec">
+                                    <p>Ремонт ноутбуков</p>
+                                    <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                                </button>
                             </div>
-                            <div class="image-slider_slide swiper-slide">
-                                <ul class="image-slider_image">
-                                    <li class="main_blockTec">
-                                        <span>Ремонт планшетов</span>
-                                        <a href="" class="main_block_button">
-                                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="image-slider_image swiper-slide">
+                                <button class="main_blockTec">
+                                    <p>Ремонт планшетов</p>
+                                    <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                                </button>
                             </div>
-                            <div class="image-slider_slide swiper-slide">
-                                <ul class="image-slider_image">
-                                    <li class="main_blockTec">
-                                        <span>Ремонт ПК</span>
-                                        <a href="" class="main_block_button">
-                                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="image-slider_image swiper-slide">
+                                <button class="main_blockTec">
+                                    <p>Ремонт ПК</p>
+                                    <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                                </button>
                             </div>
-                            <div class="image-slider_slide swiper-slide">
-                                <ul class="image-slider_image">
-                                    <li class="main_blockTec">
-                                        <span>Ремонт мониторов</span>
-                                        <a href="" class="main_block_button">
-                                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="image-slider_image swiper-slide">
+                                <button class="main_blockTec">
+                                    <p>Ремонт мониторов</p>
+                                    <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                                </button>
                             </div>
                         </div>
+                        <!--pagination -->
                         <div class="swiper-pagination"></div>
                     </div>
                 </section>
                 <section class="main">
-                    <ul class="main_blocks">
-                        <li class="main_blockTec">
-                            <span>Ремонт ноутбуков</span>
-                            <a href="" class="main_block_button">
-                                <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                            </a>
-                        </li>
-                        <li class="main_blockTec">
-                            <span>Ремонт планшетов</span>
-                            <a href="" class="main_block_button">
-                                <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                            </a>
-                        </li>
-                        <li class="main_blockTec">
-                            <span>Ремонт ПК</span>
-                            <a href="" class="main_block_button">
-                                <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                            </a>
-                        </li>
-                        <li class="main_blockTec">
-                            <span>Ремонт мониторов</span>
-                            <a href="" class="main_block_button">
-                                <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="main_button">
+                    <div class="main_blocks">
+                        <div class="main_blockTec">
+                            <p>Ремонт ноутбуков</p>
+                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                        </div>
+                        <div class="main_blockTec">
+                            <p>Ремонт планшетов</p>
+                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                        </div>
+                        <div class="main_blockTec">
+                            <p>Ремонт ПК</p>
+                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                        </div>
+                        <div class="main_blockTec">
+                            <p>Ремонт мониторов</p>
+                            <img src="imgsCom/go.svg" alt="" class="main_block_button_img">
+                        </div>
+                    </div>
+                    <div class="main_button2">
                         <img src="imgsCom/expand.svg" alt="main button img" class="main_button_img">
                         <span class="main_button_text_closed"></span>
                     </div>
@@ -468,9 +499,9 @@
                                 <span class="main_list_el">Бесплатно</span>
                                 <span class="main_list_el">30 мин</span>
                                 <span class="main_list_el">
-                                    <span>ЗАКАЗАТЬ</span>
-                                    <img src="imgsSVG/dropdown.svg" alt="">
-                                </span>
+                                        <span>ЗАКАЗАТЬ</span>
+                                        <img src="imgsSVG/dropdown.svg" alt="">
+                                    </span>
                             </li>
                             <hr>
                             <li class="main_list_li">
@@ -478,9 +509,9 @@
                                 <span class="main_list_el">1000 ₽</span>
                                 <span class="main_list_el">30-120 мин</span>
                                 <span class="main_list_el">
-                                    <span>ЗАКАЗАТЬ</span>
-                                    <img src="imgsSVG/dropdown.svg" alt="">
-                                </span>
+                                        <span>ЗАКАЗАТЬ</span>
+                                        <img src="imgsSVG/dropdown.svg" alt="">
+                                    </span>
                             </li>
                             <hr>
                             <li class="main_list_li">
@@ -488,9 +519,9 @@
                                 <span class="main_list_el">1000 ₽</span>
                                 <span class="main_list_el">30-120 мин</span>
                                 <span class="main_list_el">
-                                    <span>ЗАКАЗАТЬ</span>
-                                    <img src="imgsSVG/dropdown.svg" alt="">
-                                </span>
+                                        <span>ЗАКАЗАТЬ</span>
+                                        <img src="imgsSVG/dropdown.svg" alt="">
+                                    </span>
                             </li>
                             <hr>
                             <li class="main_list_li">
@@ -498,9 +529,9 @@
                                 <span class="main_list_el">1000 ₽</span>
                                 <span class="main_list_el">30-120 мин</span>
                                 <span class="main_list_el">
-                                    <span>ЗАКАЗАТЬ</span>
-                                    <img src="imgsSVG/dropdown.svg" alt="">
-                                </span>
+                                        <span>ЗАКАЗАТЬ</span>
+                                        <img src="imgsSVG/dropdown.svg" alt="">
+                                    </span>
                             </li>
                             <hr>
                             <li class="main_list_li">
@@ -508,15 +539,15 @@
                                 <span class="main_list_el">1000 ₽</span>
                                 <span class="main_list_el">30-120 мин</span>
                                 <span class="main_list_el">
-                                    <span>ЗАКАЗАТЬ</span>
-                                    <img src="imgsSVG/dropdown.svg" alt="">
-                                </span>
+                                        <span>ЗАКАЗАТЬ</span>
+                                        <img src="imgsSVG/dropdown.svg" alt="">
+                                    </span>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <section class="slider">
-                    <div class="image-slider swiper-container">
+                    <div class="image-slider swiper">
                         <div class="image-slider_wrapper swiper-wrapper">
                             <div class="image-slider_slide swiper-slide">
                                 <ul class="main_list_ul">
@@ -528,9 +559,9 @@
                                         <span class="main_list_el_gray">Срок</span>
                                         <span class="main_list_el">30 мин</span>
                                         <span class="main_list_el">
-                                            <span>ЗАКАЗАТЬ</span>
-                                            <img src="imgsSVG/dropdown.svg" alt="">
-                                        </span>
+                                                <span>ЗАКАЗАТЬ</span>
+                                                <img src="imgsSVG/dropdown.svg" alt="">
+                                            </span>
                                     </li>
                                 </ul>
                             </div>
@@ -544,9 +575,9 @@
                                         <span class="main_list_el_gray">Срок</span>
                                         <span class="main_list_el">30-120 мин</span>
                                         <span class="main_list_el">
-                                        <span>ЗАКАЗАТЬ</span>
-                                            <img src="imgsSVG/dropdown.svg" alt="">
-                                        </span>
+                                            <span>ЗАКАЗАТЬ</span>
+                                                <img src="imgsSVG/dropdown.svg" alt="">
+                                            </span>
                                     </li>
                                 </ul>
                             </div>
@@ -560,9 +591,9 @@
                                         <span class="main_list_el_gray">Срок</span>
                                         <span class="main_list_el">30-120 мин</span>
                                         <span class="main_list_el">
-                                        <span>ЗАКАЗАТЬ</span>
-                                            <img src="imgsSVG/dropdown.svg" alt="">
-                                        </span>
+                                            <span>ЗАКАЗАТЬ</span>
+                                                <img src="imgsSVG/dropdown.svg" alt="">
+                                            </span>
                                     </li>
                                 </ul>
                             </div>
@@ -576,9 +607,9 @@
                                         <span class="main_list_el_gray">Срок</span>
                                         <span class="main_list_el">30-120 мин</span>
                                         <span class="main_list_el">
-                                        <span>ЗАКАЗАТЬ</span>
-                                            <img src="imgsSVG/dropdown.svg" alt="">
-                                        </span>
+                                            <span>ЗАКАЗАТЬ</span>
+                                                <img src="imgsSVG/dropdown.svg" alt="">
+                                            </span>
                                     </li>
                                 </ul>
                             </div>
@@ -592,9 +623,9 @@
                                         <span class="main_list_el_gray">Срок</span>
                                         <span class="main_list_el">30-120 мин</span>
                                         <span class="main_list_el">
-                                        <span>ЗАКАЗАТЬ</span>
-                                            <img src="imgsSVG/dropdown.svg" alt="">
-                                        </span>
+                                            <span>ЗАКАЗАТЬ</span>
+                                                <img src="imgsSVG/dropdown.svg" alt="">
+                                            </span>
                                     </li>
                                 </ul>
                             </div>
@@ -613,9 +644,9 @@
                                 <span class="main_list_el_gray">Срок</span>
                                 <span class="main_list_el">30 мин</span>
                                 <span class="main_list_el">
-                                    <span>ЗАКАЗАТЬ</span>
-                                    <img src="imgsSVG/dropdown.svg" alt="">
-                                </span>
+                                        <span>ЗАКАЗАТЬ</span>
+                                        <img src="imgsSVG/dropdown.svg" alt="">
+                                    </span>
                             </li>
                         </ul>
                     </div>
@@ -636,22 +667,22 @@
                 <h5 class="header_phrase" style="height: 0; padding: 0"></h5>
                 <section class="footer_list">
                     <ul class="footer_list_ul">
-                       <li class="footer_list_li">
-                            <span class="footer_list_li_text">
-                                @ 2019 CPS <br>
-                                Разработано командой Apesong
-                            </span>
-                       </li>
                         <li class="footer_list_li">
-                            <span class="footer_list_li_text">
-                                Политика конфиденциальности
-                            </span>
+                                <span class="footer_list_li_text">
+                                    @ 2019 CPS <br>
+                                    Разработано командой Apesong
+                                </span>
                         </li>
                         <li class="footer_list_li">
-                            <span class="footer_list_li_text">
-                                Информация размещенная на данной странице, <br>
-                                            не является публичной офертой
-                            </span>
+                                <span class="footer_list_li_text">
+                                    Политика конфиденциальности
+                                </span>
+                        </li>
+                        <li class="footer_list_li">
+                                <span class="footer_list_li_text">
+                                    Информация размещенная на данной странице, <br>
+                                                не является публичной офертой
+                                </span>
                         </li>
                     </ul>
                 </section>
@@ -659,7 +690,68 @@
         </section>
     </main>
 </section>
+<section class="side_panel_right_close">
+        <div class="side_panel_right_header">
+            <img src="imgsSVG/close.svg" style="position: absolute; right: 260px; top: -10px" class="side_panel_right_closeButton">
+            <h3 class="side_panel_right_text">
+                <p class="side_panel_right_text_content">
+                    Обратная связь
+                </p>
+            </h3>
+        </div>
+        <div class="side_panel_right_content">
+                <p><input type="text" placeholder="Имя"></p>
+                <p><input type="text" placeholder="Телефон"></p>
+                <p><input type="text" placeholder="Электронная почта"></p>
+                <p><input type="text" placeholder="Сообщение"></p>
+            </div>
+        <footer class="side_panel_right_footer">
+                <h6 class="side_panel_right_footer_text">
+                    Нажимая “отправить”, вы даете согласие на обработку <br>
+                    персональных данных и соглашаетесь с нашей <br>
+                    политикой конфиденциальности
+                </h6>
+                <span class="main_list_el" style="height: 1px; font-size: 10px; padding: 10px 0; ">
+                <span style="align-self: center">ОТПРАВИТЬ</span>
+                <img src="imgsSVG/dropdown.svg" alt="dropdown">
+            </span>
+            </footer>
+    </section>
+<section class="side_panel_right_close_call">
+    <div class="side_panel_right_header">
+        <img src="imgsSVG/close.svg" style="position: absolute; right: 260px; top: -10px" class="side_panel_right_closeButton_call">
+        <h3 class="side_panel_right_text">
+            <p class="side_panel_right_text_content">
+                Обратная связь
+            </p>
+        </h3>
+    </div>
+    <div class="side_panel_right_content">
+        <p><input type="text" placeholder="Телефон"></p>
+    </div>
+    <footer class="side_panel_right_footer">
+        <h6 class="side_panel_right_footer_text">
+            Нажимая “отправить”, вы даете согласие на обработку <br>
+            персональных данных и соглашаетесь с нашей <br>
+            политикой конфиденциальности
+        </h6>
+        <span class="main_list_el" style="height: 1px; font-size: 10px; padding: 10px 0; ">
+                <span style="align-self: center">ОТПРАВИТЬ</span>
+                <img src="imgsSVG/dropdown.svg" alt="dropdown">
+            </span>
+    </footer>
+</section>
+
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
+
+
+
 </html>
