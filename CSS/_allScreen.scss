@@ -57,6 +57,10 @@
   }
 }
 @media screen and (max-width: 768px) and (min-width: 321px){
+
+  .header_nav_elements_left{
+    align-content: space-around;
+  }
   .main_block:nth-child(n+7){
     display: none;
   }
@@ -224,7 +228,7 @@
     position: relative;
   }
   .side_panel_right_close_call{
-    display: block;
+    display: none;
     position: absolute;
     right: 0;
     background-color: white;
