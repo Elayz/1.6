@@ -172,7 +172,17 @@
   .image-slider{
     overflow-x: hidden;
   }
-
+  .side_panel_right_close{
+    display: none;
+    position: fixed;
+    height: 500%;
+    width: 100%;
+    top: 0;
+    transition: left 1s 1s;
+    animation-name: side_panel_right_open_call_anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 
 
   .header_nav{
@@ -224,22 +234,49 @@
     animation-duration: 1s;
     animation-name: side_panel_left_mobile_close;
   }
+  .side_panel_right_closeButton{
+    position: relative;
+    top: -65px !important;
+    left: -10px;
+  }
+  .side_panel_right_content input{
+    width: 100%;
+  }
+  .side_panel_right_content{
+    margin: 0 30px 0 10px;
+    padding: 0;
+  }
+  .side_panel_right_text{
+    margin-top: 50px;
+  }
   .side_panel_right_closeButton_call{
     display: block;
     margin: 0;
-    position: relative;
+    position: absolute;
+    right: 310px !important;
+    top: -45px;
+
   }
   .side_panel_right_close_call{
     display: none;
-    position: absolute;
-    right: 0;
-    background-color: white;
-    height: 100%;
-    z-index: 2;
-    box-shadow: 0 -10px 20px 0 lightgray;
+    position: fixed;
+    height: 500%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation-name: call;
     transition: left 1s 1s;
-    animation-name: side_panel_right_close_call_anim;
+
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes call {
+    from {
+      display: block;
+    }
+    to {
+      display: block;
+    }
   }
   .prime_page{
     z-index: 1;

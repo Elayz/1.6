@@ -155,6 +155,7 @@ li{
     z-index: 2;
     box-shadow: 0 -10px 20px 0 lightgray;
     transition: left 1s 1s;
+    animation-fill-mode: forwards;
     animation-name: side_panel_right_open_call_anim;
     animation-duration: 1s;
 
