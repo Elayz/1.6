@@ -208,7 +208,7 @@ if(media9000.matches) {
     main_panel_footer_block_left.addEventListener('click', function () {
         side_panel_right.style.animationName = "side_panel_right_close_call_anim";
         setTimeout(
-            
+
         )
         blureMask.style.zIndex = "-1";
         side_panel_right.classList.remove('side_panel_right_open');
