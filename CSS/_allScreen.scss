@@ -81,6 +81,7 @@
     box-shadow: 0 -10px 20px 0 lightgray;
     transition: left 1s 1s;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 
 
   }
@@ -177,13 +178,14 @@
   .header_nav{
     padding: 10px 10px;
     align-content: center;
+    width: 320px;
   }
   .header_nav_elements_right hr{
     align-self: flex-start;
     margin: 6px 10px 10px 10px;
   }
   .header_nav_elements_right{
-    padding: 0 0;
+    padding: 0 30px 0 0;
   }
   .header_nav_element_right_2{
     padding: 0 0 0 10px;
@@ -197,7 +199,7 @@
 
   }
   .header_nav_element_left{
-    padding: 0 10px;
+
     transition: 0.1s;
   }
   .header_nav_element_left:hover{
@@ -300,7 +302,8 @@
   }
 
   .body{
-    display: inherit;
+    display: block;
+
   }
 
   .swiper-pagination{

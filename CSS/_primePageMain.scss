@@ -72,6 +72,15 @@
 .main_panel_footer_block_right:hover{
   transform: scale(1.2);
 }
+.main_panel_footer_block_right_mob{
+  justify-content: flex-start;
+  align-self: center;
+  margin: 20px 10px 10px 20px;
+  transition: 0.1s;
+}
+.main_panel_footer_block_right_mob:hover{
+  transform: scale(1.2);
+}
 .main_panel_footer_block_lang_el{
   margin: 20px 20px 20px 20px;
 }
@@ -169,12 +178,7 @@
   color: gray;
   padding-left: 20px;
 }
-.main_list_li{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 .main_list_el:last-child{
   background-color: #FF3E79;
   border-radius: 20px;
