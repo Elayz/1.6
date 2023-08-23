@@ -245,6 +245,12 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
+  .side_panel_right_close .side_panel_right_header img {
+    top: -65px !important;
+  }
+  .side_panel_right_header img {
+    top: -45px !important;
+  }
   .header_nav {
     padding: 10px 10px;
     align-content: center;

@@ -72,10 +72,15 @@ if(media320.matches) {
         side_panel_right.style.animationName = 'side_panel_right_close_call_anim';
     });
     feedback_call_Mobile.addEventListener('click', function () {
-        side_panel_right.style.display = 'block';
-        side_panel_right.style.zIndex = '2';
+        side_panel_right_call.style.display = 'block';
+        side_panel_right_call.style.zIndex = '2';
         sideMobilePanel.style.animationName = "side_panel_left_mobile_close";
-        side_panel_right.style.animationName = 'side_panel_right_open_call_anim';
+        side_panel_right_call.style.animationName = 'side_panel_right_open_call_anim';
+
+    });
+    main_panel_footer_block_left_call.addEventListener('click', function () {
+        sideMobilePanel.style.animationName = "side_panel_left_mobile_open";
+        side_panel_right_call.style.animationName = 'side_panel_right_close_call_anim';
     });
 
 }
@@ -118,23 +123,23 @@ if(media768.matches) {
         )
         if (getComputedStyle(side_panel_right_call).display == 'block'){
             side_panel_right_call.style.animationName = "side_panel_right_close_call_anim";
-            // setTimeout(
-            //     () =>{
-            //         side_panel_right_call.style.display = "none";
-            //     },
-            //     0.8 * 1000
-            // )
+            setTimeout(
+                () =>{
+                    side_panel_right_call.style.display = "none";
+                },
+                0.8 * 1000
+            )
             side_panel_right_call.classList.remove('side_panel_right_open');
             side_panel_right_call.classList.add('side_panel_right_close');
         }
         else if (getComputedStyle(side_panel_right).display == 'block'){
             side_panel_right.style.animationName = "side_panel_right_close_call_anim";
-            // setTimeout(
-            //     () =>{
-            //         side_panel_right.style.display = "none";
-            //     },
-            //     0.8 * 1000
-            // )
+            setTimeout(
+                () =>{
+                    side_panel_right.style.display = "none";
+                },
+                0.8 * 1000
+            )
             side_panel_right.classList.remove('side_panel_right_open');
             side_panel_right.classList.add('side_panel_right_close');
         }

@@ -15,12 +15,12 @@ li{
 }
 
 
-/*.main_list_li{*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: flex-start;*/
-/*    align-items: center;*/
-/*}*/
+.main_list_li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 
