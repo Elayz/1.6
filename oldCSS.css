@@ -67,6 +67,7 @@ li{
     transition: left 1s 1s;
     animation-name: side_panel_right_open_call_anim;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 
 }
 @keyframes side_panel_right_open_anim {
@@ -88,6 +89,7 @@ li{
     transition: left 1s 1s;
     animation-name: side_panel_right_close_call_anim;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 @keyframes side_panel_right_close_anim {
     from {

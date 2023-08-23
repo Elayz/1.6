@@ -118,23 +118,23 @@ if(media768.matches) {
         )
         if (getComputedStyle(side_panel_right_call).display == 'block'){
             side_panel_right_call.style.animationName = "side_panel_right_close_call_anim";
-            setTimeout(
-                () =>{
-                    side_panel_right_call.style.display = "none";
-                },
-                0.8 * 1000
-            )
+            // setTimeout(
+            //     () =>{
+            //         side_panel_right_call.style.display = "none";
+            //     },
+            //     0.8 * 1000
+            // )
             side_panel_right_call.classList.remove('side_panel_right_open');
             side_panel_right_call.classList.add('side_panel_right_close');
         }
         else if (getComputedStyle(side_panel_right).display == 'block'){
             side_panel_right.style.animationName = "side_panel_right_close_call_anim";
-            setTimeout(
-                () =>{
-                    side_panel_right.style.display = "none";
-                },
-                0.8 * 1000
-            )
+            // setTimeout(
+            //     () =>{
+            //         side_panel_right.style.display = "none";
+            //     },
+            //     0.8 * 1000
+            // )
             side_panel_right.classList.remove('side_panel_right_open');
             side_panel_right.classList.add('side_panel_right_close');
         }
@@ -168,11 +168,10 @@ if(media768.matches) {
     });
     main_panel_footer_block_left.addEventListener('click', function () {
         side_panel_right_call.style.animationName = "side_panel_right_close_call_anim";
-
+        side_panel_right.style.animationName = "side_panel_right_close_call_anim";
         side_panel_left.style.animationName = 'side_panel_left_open';
         side_panel_left.style.zIndex = "2";
-        side_panel_right_call.classList.remove('side_panel_right_open');
-        side_panel_right_call.classList.add('side_panel_right_close');
+
     });
 }
 
@@ -207,9 +206,6 @@ if(media9000.matches) {
     });
     main_panel_footer_block_left.addEventListener('click', function () {
         side_panel_right.style.animationName = "side_panel_right_close_call_anim";
-        setTimeout(
-
-        )
         blureMask.style.zIndex = "-1";
         side_panel_right.classList.remove('side_panel_right_open');
         side_panel_right.classList.add('side_panel_right_close');
