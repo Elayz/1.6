@@ -85,8 +85,6 @@ if(media320.matches) {
 
 }
 
-
-
 const media768 = window.matchMedia('(max-width: 768px) and (min-width: 321px)')
 if(media768.matches) {
     burger.addEventListener('click', function () {
@@ -179,8 +177,6 @@ if(media768.matches) {
 
     });
 }
-
-
 
 const media9000 = window.matchMedia('(max-width: 9000px) and (min-width: 769px)')
 if(media9000.matches) {
