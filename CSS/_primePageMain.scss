@@ -52,7 +52,7 @@
   transition: 0.1s
 }
 .main_content_el:hover{
-  border-left: #41F6D7 solid;
+  border-left: $ocean-color solid;
 }
 .prime_page{
   flex-grow: 1;
@@ -102,7 +102,7 @@
   font-size: 20px;
   padding: 0 0 0 20px;
   margin: 0;
-  background-color: #F8F8F8;
+  background-color: $gray-color;
 }
 .main_page_com_list_header{
   margin-left: 10px;
@@ -111,7 +111,7 @@
   /*transition: 0.1s;*/
   font-size: 16px;
   color: gray;
-  border: 3px #F8F8F8 solid;
+  border: 3px $gray-color solid;
   border-radius: 0;
   padding: 0.5em;
   min-width: 185px;
@@ -129,7 +129,7 @@
   font-size: 28px;
 }
 .main_page{
-  background-color: #F8F8F8;
+  background-color: $gray-color;
   border-top: 1px #B8FFEC solid;
 }
 .main_page_el{
@@ -148,8 +148,8 @@
   flex-direction: column;
 }
 .main_page_button{
-  border: #F8F8F8 solid;
-  background-color: #F8F8F8;
+  border: $gray-color solid;
+  background-color: $gray-color;
   height: 10%;
   width: 60%;
   display: flex;
